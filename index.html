@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container-imagens">
+        <img src="./img/celular.png" class="celular" />
+        <img src="./img/insta1.png" class="imagem-celular">
+        <img src="./img/insta2.png" class="imagem-celular" id="troca-imagem">
+    </div>
+    <div class="container">
+        <div class="container-form">
+            <img src="./img/insta-logo.png" class="logo" />
+
+            <input placeholder="Telefone, nome de usuario ou e-mail" />
+            <input placeholder="Password" />
+
+            <button>Entrar</button>
+
+            <a
+                href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATkzpy2730iJJG7lG4bjU3kZHIUZiSGV2rj7OZSxpNVRKCtrvRb-hmWHXiyVRTydMo5lWxanepl4OdTFAfcGFYDQsjOUnJaQqpWdC5HwJXxpUVEZmg4oPxH8FtoYov6I19cBIRxC_lq95Kcbco2csiIjiiKWstPz6JU9SeYIs1LwIBORxleVr8WwHNid0pfPxkjz6cplAaJKD0KoW46F_8r4bBukj4L5BI-hW-rT8EnGvuy7TIvn-kS-V1Znrp3GSl1V">Entrar
+                com Facebook</a>
+
+            <img class="logo-facebook" src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000">
+            <a class="esqueceu-senha">Esqueceu a senha?</a>
+        </div>
+        <div class="cadastro">
+            <p>Não tem uma conta? <span>Cadastrar-se</span></p>
+
+        </div>
+
+        <div>
+
+            <p class="paragrafo-app">Obtenha o aplicativo</p>
+            <div class="apps-donwload">
+                <img src="./img/android.png" class="logo-app" />
+                <img src="./img/ios.png" class="logo-app" />
+            </div>
+        </div>
+</body>
+
+<script>
+
+    let imagem = document.getElementById("troca-imagem")
+
+    function trocaImagem() {
+
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        }
+        else {
+            imagem.style.opacity = 0
+        }
+
+    }
+    setInterval(function () {
+        trocaImagem()
+    }, 5000);
+
+</script>
+
+</html>
