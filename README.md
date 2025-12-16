@@ -1,4 +1,4 @@
-# 📸 Instagram Login Clone
+# 📸 Instagram Login 
 
 Projeto front-end que recria a **tela de login do Instagram**, desenvolvido com **HTML, CSS e JavaScript puro**, focando em layout, posicionamento de elementos e animações simples.
 
